@@ -1,0 +1,384 @@
+/* /////////////////////////////////////////// Common Styles //////////////////////////////////// */
+.button {
+  background-color: #db9200;
+}
+.button:hover {
+  background-color: #262626;
+  -webkit-box-shadow: 0 10px 15px rgba(38, 38, 38, 0.5);
+  box-shadow: 0 10px 15px rgba(38, 38, 38, 0.5);
+}
+.button1 {
+  color: #db9200;
+}
+.button1:hover {
+  color: #262626;
+  text-shadow: 1px 1px 2px #000000, 0 0 25px #db9200, 0 0 5px #ffffff;
+}
+
+.fbutton {
+  color: #ffffff;
+  background-color: #db9200;
+}
+.fbutton:hover {
+  color: #db9200;
+  background-color: #262626;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(219, 146, 0, 0.5);
+  box-shadow: 0px 0px 15px 5px rgba(219, 146, 0, 0.5);
+}
+.navmenu {
+  color: #302f2f;
+}
+.navmenu:hover {
+  color: #db9200;
+  text-shadow: 1px 1px 2px #db9200;
+}
+.badge-notify {
+  background: #db9200;
+  position: relative;
+  top: -20px;
+  left: -5px;
+}
+/* ////////////////////////////////////// Common Styles End ///////////////////////////////////// */
+
+/* ///////////////////////////////////////////// Home Page styles ////////////////////////////////////////// */
+.brand {
+  height: 100px;
+}
+.brand:hover {
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(219, 146, 0, 0.5);
+  box-shadow: 0px 0px 15px 5px rgba(219, 146, 0, 0.5);
+}
+.paymentImg {
+  width: 60px;
+  height: 40px;
+}
+
+/* ////////////////// carousel styles ////////////////// */
+.carousel-item {
+  min-height: 350px;
+  height: 80vh;
+  width: 100%;
+}
+/* //// Animation delays //// */
+.carousel-caption h1 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.carousel-caption p {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.carousel-caption a {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+@-webkit-keyframes zoomOut {
+  from {
+    -webkit-transform: scale(2.2, 2.2);
+  }
+  to {
+    -webkit-transform: scale(1.1, 1.1);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    -webkit-transform: scale(2.2, 2.2);
+  }
+  to {
+    -webkit-transform: scale(1.1, 1.1);
+  }
+}
+.zoomOut {
+  -webkit-animation: zoomOut 15s;
+  animation: zoomOut 15s;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  to {
+    -webkit-tranpaymentform: scale(2, 2);
+    transform: scale(2, 2);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  to {
+    -webkit-transform: scale(2, 2);
+    transform: scale(2, 2);
+  }
+}
+
+.zoomIn {
+  -webkit-animation: zoomIn 15s;
+  animation: zoomIn 15s;
+}
+/* ////////////// carousel style end //////////////// */
+
+/* ///////////////////////////////////// Home Page products styles ///////////////////////////////// */
+.zoom:hover {
+  -s-transform: scale(1.1);
+  -webkit-tranpaymentform: scale(1.1);
+  -ms-tranpaymentform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+.productName {
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.fit-image {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* ///////////////// Home Page products styles End /////////////////// */
+
+/* ////////////////////////////////////////// Home Page Styles End //////////////////////////////////// */
+
+/* ///////////////////////////////////////// Dashboard Styles /////////////////////////////////// */
+#userImg {
+  margin-top: -100px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+/* //////////////////////////// Feedback Stars ///////////////////////////////// */
+.star-widget label {
+  color: #444;
+  font-size: 25px;
+  float: right;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.inputs:not(:checked) ~ label:hover,
+.inputs:not(:checked) ~ label:hover ~ label,
+.inputs:checked ~ label {
+  color: #fd4;
+}
+/* .inputs:checked ~ label {
+  color: #fd4;
+} */
+.inputs#rate-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+/* /////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////// Dashboard Styles End /////////////////////////////////// */
+
+/* ///////////////////////////////////// Cart Styles ////////////////////////////////////// */
+.a:focus {
+  outline: none;
+}
+
+.cusinput {
+  outline: none;
+}
+/* /////////////////////////////////////// Cart Styles End ////////////////////////////////// */
+
+/* /////////////////////////////////////// Payment Page Styles /////////////////////////////// */
+#paymentForm fieldset {
+  border: 0 none;
+  border-radius: 0.5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#paymentForm .action-button {
+  width: 100px;
+  font-weight: bold;
+  border: 0 none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right;
+}
+
+#paymentForm .action-button-previous {
+  width: 100px;
+  background: #000000;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+#paymentForm .action-button-previous:hover,
+#paymentForm .action-button-previous:focus {
+  background-color: #db9200;
+  -webkit-box-shadow: 0 10px 15px rgba(219, 146, 0, 0.5);
+  box-shadow: 0 10px 15px rgba(219, 146, 0, 0.5);
+}
+
+.scard {
+  z-index: 0;
+  border: none;
+  position: relative;
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left;
+}
+
+#progressbar {
+  /* overflow: hidden; */
+  list-style: none;
+  color: lightgrey;
+  display: flex;
+}
+
+#progressbar .active {
+  color: #db9200;
+}
+
+#progressbar li {
+  font-size: 15px;
+  width: 50%;
+  /* float: left; */
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar #shiping::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f21a";
+  font-weight: 900;
+}
+
+#progressbar #paymentcard::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f09d";
+  font-weight: 900;
+}
+
+#progressbar li::before {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 2px;
+  font-size: 20px;
+  color: white;
+  background: lightgray;
+}
+
+#progressbar li::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+#progressbar li.active::before,
+#progressbar li.active::after {
+  background: #db9200;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #db9200;
+}
+
+/* .fit-image {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+} */
+/* /////////////////////////////////////// Payment Page Styles End /////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////// */
+.gallery .full,
+.gallery .full img {
+  max-height: 550px;
+}
+.gallery .previews a,
+.gallery .full {
+  border: 4px solid #eee;
+  height: auto;
+}
+.gallery .previews a:hover,
+.gallery .previews a.selected {
+  border: 4px solid #777;
+}
+
+/* /////////////////////////////////////////////////// MEDIA QUERIES /////////////////////////////////////////////// */
+@media screen and (max-width: 320px) {
+  /* ////// Navbar Changes ////// */
+  #loginBtn,
+  #logoutBtn {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .uname {
+    display: none;
+  }
+  /* ////// Modal Width ////// */
+  .modal-content {
+    min-width: 220vw !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* ////// Modal Width ////// */
+  .modal-content {
+    width: 150vw !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mid-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #sec-nav > ul {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #userImg {
+    margin: 0px;
+  }
+}
